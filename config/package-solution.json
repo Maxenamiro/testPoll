@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "merck-poll-client-side-solution",
+    "id": "e24dd72e-24fc-464c-bf0c-c9a5a260cbec",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "merck-poll description"
+      },
+      "longDescription": {
+        "default": "merck-poll description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "merck-poll Feature",
+        "description": "The feature that activates elements of the merck-poll solution.",
+        "id": "9a37c452-1c21-4922-9ae1-46b1fb7644dd",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/merck-poll.sppkg"
+  }
+}

@@ -1,0 +1,178 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.container {
+	background-image: url('../assets/mainBackgroundImage.png');
+	background-size: 300px;
+	position: relative;
+	background-position-x: right;
+	background-repeat: no-repeat;
+	background-color: #503291;
+	border-radius: 16px;
+}
+
+.column {
+	padding: 20px;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: 800;
+	text-align: left;
+	color: #ffc832;
+}
+
+.subTitle {
+	font-weight: 500;
+	text-align: left;
+	color: white;
+}
+
+.chooseOption {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+	padding: 0 20px;
+
+	.options {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 10px;
+		cursor: pointer;
+
+		input[type='checkbox'] {
+			margin-right: 10px;
+			cursor: pointer;
+			border: none;
+			border-radius: 50%;
+		}
+
+		label {
+			font-size: 16px;
+			font-weight: 800;
+			color: white;
+		}
+	}
+}
+
+.submitButton {
+	padding: 20px;
+
+	.button {
+		border: none;
+		height: 40px;
+		background-color: #2dbecd;
+		color: #503291;
+		width: 100%;
+		border-radius: 5px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.votedMessage {
+		// margin-top: 20px;
+		padding: 10px;
+		background-color: #6142a3;
+		color: #2dbecd;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 6px;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+/// second screen
+
+.results {
+	padding: 0 20px;
+	display: grid;
+	gap: 10px;
+}
+
+.resultRow {
+	align-items: center;
+	gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.resultLabel {
+	flex: 1;
+	color: white;
+	font-weight: 600;
+
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
+	position: relative;
+	left: 7%;
+}
+
+.progressBar {
+	flex: 3;
+	background-color: white;
+	border-radius: 10px;
+	height: 14px;
+	overflow: hidden;
+	position: relative;
+	left: -90%;
+}
+
+.progressFill {
+	background-color: #2dbecd;
+	height: 100%;
+	transition: width 0.3s ease;
+}
+
+.voteCount {
+	width: 0px;
+	color: white;
+	font-weight: 600;
+	text-align: right;
+}
+
+.voteContainer {
+	display: flex;
+	align-items: center;
+}
+////////////////////////////////////////////////////////////////////////////////////
+/// 3rd screen final results in percents
+
+.finalResults {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+	padding: 0 20px;
+}
+
+.finalProgressBar {
+	flex: 3;
+	background-color: white;
+	border-radius: 10px;
+	height: 14px;
+	overflow: hidden;
+}
+
+.finalResultLabel {
+	flex: 1;
+	color: white;
+	font-weight: 600;
+
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
+	position: relative;
+}
+
+.finalResultRow {
+	align-items: center;
+	gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
